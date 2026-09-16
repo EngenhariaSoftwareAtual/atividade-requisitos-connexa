@@ -190,20 +190,13 @@ Se qualquer consulta retornar linhas, a entrega está incompleta — corrija ant
 - 100% das histórias com `Story Points` e Tag MoSCoW
 - Backlog **ordenado**, sem empates
 
-### 5.2 No repositório da equipe
 
-Arquivo `docs/backlog-inicial.md` no repositório `<organizacao-da-disciplina>/connexa-equipe-NN`, contendo:
-
-1. **Justificativa da ordem** dos cinco primeiros itens do backlog, cada uma referenciando um trecho do briefing (fala de envolvido, objetivo declarado ou restrição).
-2. **Decisões sobre pontos em aberto**: para cada ponto em aberto do briefing que a equipe precisou resolver, registre a decisão tomada e o motivo. Ponto em aberto não resolvido também deve ser listado, como pendência.
-3. **História de referência** usada na estimativa, com o motivo da escolha.
-4. **Registro das sessões**: data, duração e participantes de cada sessão de refinamento.
-
-### 5.3 Submissão no Microsoft Teams
+### 5.2 Submissão no Microsoft Teams
 
 Um único post da equipe, contendo:
 
 - link do projeto no Azure Boards (com o docente já adicionado);
+- cópia de tela mostrando o backlog criado
 
 ---
 
