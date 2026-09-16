@@ -31,8 +31,8 @@ Principais entregas:
 - 2 a 4 Epics;
 - 4 a 8 Features;
 - 12 a 18 User Stories vinculadas às respectivas Features;
-- histórias estimadas, ordenadas e classificadas com MoSCoW;
-- arquivo `docs/backlog-inicial.md` no repositório da equipe.
+- histórias estimadas, ordenadas e classificadas com MoSCoW (opcional)
+
 
 ### 2. RA-02 — Planejamento da Sprint 1
 
@@ -44,7 +44,7 @@ Principais entregas:
 - capacidade de todos os integrantes registrada;
 - 3 a 6 histórias selecionadas e vinculadas à sprint;
 - tarefas de 2 a 8 horas, incluindo testes e revisão;
-- arquivo `docs/sprint-1-planejamento.md` no repositório da equipe.
+
 
 ## Material de referência
 
