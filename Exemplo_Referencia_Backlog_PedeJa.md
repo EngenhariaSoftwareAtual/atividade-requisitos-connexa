@@ -1,7 +1,7 @@
-# Exemplo de referência — Backlog e Sprint 1 do **PedeJá**
+# Exemplo de referência — Backlog do **PedeJá**
 
 **Disciplina de Engenharia de Software** · Prof. Claudio Nunes
-**Finalidade:** material de consulta para as atividades RA-01 e RA-02.
+**Finalidade:** material de consulta para a atividade RA-01.
 
 > **Por que um domínio diferente do Connexa.** Este exemplo existe para mostrar *forma*, *nível* e *grau de detalhe* — não conteúdo aproveitável. Copiar trechos daqui para o backlog do Connexa não funciona: o domínio é outro, os envolvidos são outros e a correção percebe. Use-o para responder "como se escreve isso?", nunca "o que devo escrever?".
 
@@ -123,18 +123,6 @@ Cenário: limite de itens por pedido
 
 **Por que estes cenários.** O primeiro cobre o caminho feliz. O segundo revela uma regra de negócio que o briefing não mencionava — agrupar ou não itens repetidos — e que precisou ser decidida. O terceiro e o quarto são exceções: indisponibilidade e limite. Note que nenhum cenário menciona tabela, endpoint ou componente de tela.
 
-**Tarefas (criadas no planejamento da sprint)**
-
-| Task | Horas |
-|---|---:|
-| Modelar carrinho e itens de carrinho | 4h |
-| Implementar inclusão de item com agrupamento de repetidos | 5h |
-| Implementar as validações de disponibilidade e limite | 4h |
-| Construir a tela de cardápio com o botão de adicionar | 6h |
-| Escrever os testes dos quatro cenários de aceite | 3h |
-| Revisar em par e ajustar | 2h |
-| **Total** | **24h** |
-
 ---
 
 ### US-08 — Enviar o pedido para a cozinha
@@ -173,60 +161,7 @@ Cenário: restaurante fechado
 
 ---
 
-## 5. Plano da Sprint 1
-
-**Meta**
-
-> Ao final desta sprint, um cliente consegue montar um pedido a partir do cardápio do dia e enviá-lo para a cozinha, sem telefonar.
-
-**Capacidade**
-
-```
-Horas por integrante, por semana ................  6h
-Integrantes .....................................   5
-Semanas .........................................   2
-                                              ------
-Capacidade bruta ................................  60h
-( - ) reserva de 20% para imprevistos ...........  12h
-( - ) reuniões da equipe ........................   4h
-                                              ------
-Capacidade de planejamento ......................  44h
-Alvo da primeira sprint (75%) ...................  33h
-```
-
-**Escopo selecionado**
-
-| História | Pontos | Horas das tarefas |
-|---|---:|---:|
-| US-01 — Ver o cardápio disponível hoje | 3 | 10h |
-| US-03 — Adicionar um item ao carrinho | 3 | 24h |
-| **Total** | **6** | **34h** |
-
-**Como o escopo foi ajustado.** A equipe havia selecionado também US-08 (Enviar o pedido), o que levaria o total a 52h — acima da capacidade. Como a meta prioriza *montar e enviar*, houve discussão real: manter US-08 e cortar US-03 tornaria a meta inalcançável, porque não há o que enviar sem carrinho. A equipe optou por **devolver US-08 ao backlog** e ajustar a meta para o que efetivamente cabe:
-
-> Ao final desta sprint, um cliente consegue ver o cardápio do dia e montar seu pedido no carrinho.
-
-Devolver a história e reescrever a meta **antes** do início da sprint é o comportamento esperado. Manter as três histórias e terminar as três pela metade não entregaria nada verificável.
-
-**Riscos**
-
-| Risco | Resposta prevista |
-|---|---|
-| Dois integrantes têm prova na segunda semana | Concentrar as tarefas deles na primeira semana |
-| A equipe nunca usou a biblioteca de interface escolhida | Reservar 4h de estudo na primeira tarefa; se não render, trocar por solução já conhecida |
-| O dono do restaurante ainda não definiu o limite de itens por pedido | Adotar 20 como valor provisório e registrar a decisão |
-
-**Definition of Done desta sprint**
-
-- [ ] Todos os critérios de aceite da história verificados manualmente
-- [ ] Testes automatizados dos cenários principais passando
-- [ ] Código revisado por outro integrante
-- [ ] Nenhuma tarefa da história em estado `Active`
-- [ ] História movida para `Closed` pelo guardião da qualidade
-
----
-
-## 6. O que este exemplo pretende ensinar
+## 5. O que este exemplo pretende ensinar
 
 | Ponto | Onde aparece |
 |---|---|
@@ -237,8 +172,6 @@ Devolver a história e reescrever a meta **antes** do início da sprint é o com
 | Ordem justificada, item a item | Seção 3, última coluna |
 | `Must` limitado, não universal | Seção 3, observação sobre MoSCoW |
 | Estimativa por comparação com uma referência declarada | Seção 3, observação sobre a escala |
-| Tarefas de 2h a 8h, cobrindo teste e revisão | Seção 4, tabela de tarefas |
-| Ajustar escopo — e a meta — antes de começar | Seção 5 |
 
 ---
 

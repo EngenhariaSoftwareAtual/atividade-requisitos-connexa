@@ -1,26 +1,25 @@
 # Atividade de Requisitos — Projeto Connexa
 
-Material didático da disciplina de **Engenharia de Software** para a realização, em equipes de 4 a 5 alunos, das atividades de levantamento, organização e planejamento de requisitos do projeto **Connexa**.
+Material didático da disciplina de **Engenharia de Software** para a realização, em equipes de 4 a 5 alunos, da atividade de levantamento, organização e priorização de requisitos do projeto **Connexa**.
 
-As atividades conduzem a equipe da construção do Product Backlog ao planejamento da primeira sprint, usando o **Azure Boards** com o processo **Agile**. As entregas documentais produzidas pelos alunos devem ser registradas no repositório da própria equipe, conforme indicado em cada roteiro.
+A atividade conduz a equipe do briefing do projeto à construção do Product Backlog, usando o **Azure Boards** com o processo **Agile**.
+
+> O planejamento e a execução da Sprint 1 têm repositório próprio: [atividade-sprint-connexa](https://github.com/EngenhariaSoftwareAtual/atividade-sprint-connexa). Eles não fazem parte deste material.
 
 ## Objetivos de aprendizagem
 
-Ao concluir a sequência, a equipe deverá ser capaz de:
+Ao concluir a atividade, a equipe deverá ser capaz de:
 
 - distinguir Epics, Features, User Stories e Tasks;
 - transformar um briefing em um Product Backlog coerente e ordenado;
 - escrever histórias de usuário e critérios de aceite verificáveis em Gherkin;
-- estimar e priorizar histórias com Story Points e MoSCoW;
-- definir uma meta de sprint e selecionar um escopo compatível com ela;
-- calcular a capacidade real da equipe e decompor histórias em tarefas executáveis;
-- registrar riscos e acordar uma Definition of Done.
+- estimar e priorizar histórias com Story Points e MoSCoW.
 
-## Sequência das atividades
+## Sequência da atividade
 
 ### 0. Briefing do projeto
 
-Antes de iniciar os roteiros, leia em equipe a apresentação [Connexa — Proposta do Projeto](Connexa_Proposta_do_Projeto.pptx). Ela contém o cenário, os envolvidos, os objetivos institucionais, o escopo, as restrições e os pontos em aberto que fundamentam o levantamento de requisitos.
+Antes de iniciar o roteiro, leia em equipe a apresentação [Connexa — Proposta do Projeto](Connexa_Proposta_do_Projeto.pptx). Ela contém o cenário, os envolvidos, os objetivos institucionais, o escopo, as restrições e os pontos em aberto que fundamentam o levantamento de requisitos.
 
 ### 1. RA-01 — Construção do Product Backlog
 
@@ -33,24 +32,11 @@ Principais entregas:
 - 12 a 18 User Stories vinculadas às respectivas Features;
 - histórias estimadas, ordenadas e classificadas com MoSCoW (opcional)
 
-
-### 2. RA-02 — Planejamento da Sprint 1
-
-Após concluir e corrigir a RA-01, siga o [roteiro de planejamento da Sprint 1](RA-02_Roteiro_Planejamento_Sprint1.md) para configurar a iteração, calcular a capacidade, definir a meta da sprint, selecionar histórias e decompô-las em tarefas.
-
-Principais entregas:
-
-- Sprint 1 configurada no Azure Boards;
-- capacidade de todos os integrantes registrada;
-- 3 a 6 histórias selecionadas e vinculadas à sprint;
-- tarefas de 2 a 8 horas, incluindo testes e revisão;
-
-
 ## Material de referência
 
-O arquivo [Exemplo de referência — Backlog e Sprint 1 do PedeJá](Exemplo_Referencia_Backlog_PedeJa.md) demonstra a forma, o nível e o grau de detalhe esperados. O exemplo usa outro domínio e não deve ser copiado para o backlog do Connexa.
+O arquivo [Exemplo de referência — Backlog do PedeJá](Exemplo_Referencia_Backlog_PedeJa.md) demonstra a forma, o nível e o grau de detalhe esperados. O exemplo usa outro domínio e não deve ser copiado para o backlog do Connexa.
 
-A apresentação `Azure_Boards_Backlog_e_Sprint1.pptx` oferece o apoio visual para acompanhar a construção do backlog e o planejamento da sprint no Azure Boards.
+A apresentação `Azure_Boards_Product_Backlog.pptx` oferece o apoio visual para acompanhar a construção do backlog no Azure Boards.
 
 ## Organização dos arquivos
 
@@ -58,17 +44,15 @@ A apresentação `Azure_Boards_Backlog_e_Sprint1.pptx` oferece o apoio visual pa
 |---|---|
 | `Connexa_Proposta_do_Projeto.pptx` | Briefing do projeto usado como fonte para o levantamento de requisitos |
 | `RA-01_Roteiro_Product_Backlog.md` | Instruções para construir e verificar o Product Backlog |
-| `RA-02_Roteiro_Planejamento_Sprint1.md` | Instruções para planejar a primeira sprint |
 | `Exemplo_Referencia_Backlog_PedeJa.md` | Exemplo completo em um domínio diferente |
-| `Azure_Boards_Backlog_e_Sprint1.pptx` | Apresentação de apoio às duas atividades |
+| `Azure_Boards_Product_Backlog.pptx` | Apresentação de apoio à atividade |
 
 ## Ferramentas e submissão
 
 - **Gestão do trabalho:** Azure Boards, processo Agile.
-- **Documentação da equipe:** repositório GitHub indicado pelo docente.
-- **Submissão:** Microsoft Teams, de acordo com a seção de entregáveis de cada roteiro.
+- **Submissão:** Microsoft Teams, de acordo com a seção de entregáveis do roteiro.
 
-Leia cada roteiro integralmente antes de iniciar. Os checkpoints apresentados ao longo dos documentos devem ser verificados pela equipe antes da submissão.
+Leia o roteiro integralmente antes de iniciar. Os checkpoints apresentados ao longo do documento devem ser verificados pela equipe antes da submissão.
 
 ---
 

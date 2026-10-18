@@ -65,8 +65,7 @@ Antes de iniciar, confirme que a equipe já concluiu os passos da proposta do pr
 ### Etapa 0 — Preparar o ambiente (15 min)
 
 1. Abra **Project Settings › Boards › Team configuration › Backlogs** e marque **Epics**, **Features** e **Stories**.
-2. Na aba **Working days**, marque os dias em que a equipe efetivamente trabalha.
-3. Volte a **Boards › Backlogs** e confirme que o seletor de nível, no alto da página, oferece os três níveis.
+2. Volte a **Boards › Backlogs** e confirme que o seletor de nível, no alto da página, oferece os três níveis.
 
 > **Checkpoint 0** — a equipe consegue alternar entre *Epics*, *Features* e *Stories* na página de backlog.
 
@@ -154,7 +153,7 @@ Sempre **de cima para baixo**:
    - História estimada em **13 ou mais** deve ser quebrada antes de seguir (por passo do fluxo, por perfil, por regra de negócio, por variação de dado ou por caminho feliz × exceções).
 3. **Ordenar por arrasto** na página de backlog, até que a sequência responda: *se a equipe só conseguir fazer três coisas, quais são?* Não existe empate.
 4. **Classificar em MoSCoW** com Tags, usando exatamente estas grafias: `Must`, `Should`, `Could`, `Wont`.
-   - Regra prática: os itens `Must` não devem ultrapassar 60% do esforço previsto para a primeira sprint.
+   - Regra prática: os itens `Must` não devem ultrapassar 60% do esforço total do backlog (soma dos Story Points).
    - Aplique em lote: selecione várias histórias com `Ctrl`, botão direito → *Edit*.
 5. **Exibir as colunas de conferência** em *Column Options*: `Story Points`, `Tags`, `State`.
 
@@ -207,7 +206,7 @@ Um único post da equipe, contendo:
 | Erro | Como se manifesta | Correção |
 |---|---|---|
 | Criar tudo como User Story | Nada aparece nos níveis Epics e Features | Habilitar os níveis e reparentar pelo painel *Mapping* |
-| História horizontal | "Criar o banco de dados", "Montar a API" | Reescrever como fatia vertical; o trabalho técnico vira Task na Atividade 2 |
+| História horizontal | "Criar o banco de dados", "Montar a API" | Reescrever como fatia vertical; o trabalho técnico vira Task, criada depois, na etapa de planejamento da sprint |
 | Critério que testa implementação | "Então um registro é inserido na tabela" | Nomear o efeito visível para quem usa |
 | Só caminho feliz | Todos os cenários com dados válidos | Acrescentar recusa, limite e dado ausente |
 | Tudo `Must` | 100% das tags iguais | Reordenar e reclassificar aceitando que algo fica para depois |
@@ -218,7 +217,7 @@ Um único post da equipe, contendo:
 
 ## 7. Material de apoio
 
-- Apresentação **Azure Boards na prática — do Product Backlog ao planejamento da primeira Sprint** (Partes 1 a 5)
+- Apresentação **Azure Boards na prática — da proposta do projeto ao Product Backlog ordenado** (`Azure_Boards_Product_Backlog.pptx`, Partes 1 a 5)
 - Documento **Connexa — Proposta do Projeto** (briefing do cliente)
 - **Exemplo de referência: backlog do PedeJá** (`Exemplo_Referencia_Backlog_PedeJa.md`) — domínio distinto, para consulta de forma e nível
 - Documentação oficial: *Azure Boards › Backlogs, portfolios, and Agile project management*
