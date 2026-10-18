@@ -1,9 +1,9 @@
 # Exemplo de referência — Backlog do **PedeJá**
 
 **Disciplina de Engenharia de Software** · Prof. Claudio Nunes
-**Finalidade:** material de consulta para a atividade RA-01.
+**Finalidade:** material de consulta para a Atividade de Requisitos.
 
-> **Por que um domínio diferente do Connexa.** Este exemplo existe para mostrar *forma*, *nível* e *grau de detalhe* — não conteúdo aproveitável. Copiar trechos daqui para o backlog do Connexa não funciona: o domínio é outro, os envolvidos são outros e a correção percebe. Use-o para responder "como se escreve isso?", nunca "o que devo escrever?".
+> **Por que um domínio diferente do Connexa.** Este exemplo existe para mostrar *forma*, *nível* e *grau de detalhe* — não conteúdo aproveitável. Copiar trechos daqui para o backlog do Connexa não funciona: o domínio é outro e os envolvidos são outros. Use-o para responder "como se escreve isso?", nunca "o que devo escrever?".
 
 ---
 
@@ -81,6 +81,12 @@ A ordem responde à pergunta: *se a equipe só conseguir entregar três coisas, 
 **Observação sobre a escala:** a história de referência escolhida pela equipe foi **US-01 = 3 pontos**. Todas as demais foram estimadas por comparação com ela.
 
 **Observação sobre MoSCoW:** cinco `Must` somando 19 pontos, contra 31 pontos no restante — os itens obrigatórios não dominam o backlog. Um backlog com treze `Must` não teria sido priorizado.
+
+**Onde as decisões ficaram registradas.** No Azure Boards, em comentários (**Discussion**) dos próprios itens:
+
+- na US-01: *"História de referência: 3 pontos. Escolhida por ser pequena e entendida por todos."*;
+- em cada uma das cinco primeiras histórias, o texto da coluna "Por que nesta posição", com o trecho do briefing que o sustenta;
+- na US-03: *"Ponto em aberto — limite de itens por pedido. O dono ainda não definiu; adotamos 20 como valor provisório."*
 
 ---
 
@@ -170,6 +176,7 @@ Cenário: restaurante fechado
 | História é fatia vertical, com papel e benefício | Seção 4 |
 | Cenário de exceção revela regra de negócio ausente | US-03, cenário do item repetido |
 | Ordem justificada, item a item | Seção 3, última coluna |
+| Decisões registradas nos próprios work items | Seção 3, registro das decisões |
 | `Must` limitado, não universal | Seção 3, observação sobre MoSCoW |
 | Estimativa por comparação com uma referência declarada | Seção 3, observação sobre a escala |
 

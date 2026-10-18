@@ -1,4 +1,4 @@
-# RA-01 — Roteiro de Atividade
+# Atividade de Requisitos — Roteiro
 ## Construção do Product Backlog do Connexa no Azure Boards
 
 **Disciplina de Engenharia de Software** · Prof. Claudio Nunes
@@ -11,12 +11,9 @@
 
 | Marcador | Significado |
 |---|---|
-| `<organizacao-da-disciplina>` | Organização no GitHub definida pelo docente na primeira aula |
-| `<turma>` | Identificador da turma, informado pelo docente |
-| `NN` | Número da equipe, com dois dígitos (`01`, `02`, … `12`) |
-| `engsoft-<turma>-equipe-NN` | Sugestão de nome para a organização da equipe no Azure DevOps |
+| `<organizacao-azure-devops>` | Organização da equipe no Azure DevOps, criada com a conta institucional. O nome é escolhido pela equipe |
 
-> O nome da organização no Azure DevOps é uma convenção sugerida. O nome do projeto é obrigatório e deve ser exatamente `Connexa`.
+> O nome da equipe e o da organização são escolhidos pelos integrantes e não devem mudar depois de criados. O nome do projeto é obrigatório e deve ser exatamente `Connexa`.
 
 ---
 
@@ -49,14 +46,17 @@ Ao final desta atividade, a equipe deverá ser capaz de:
 
 Antes de iniciar, confirme que a equipe já concluiu os passos da proposta do projeto:
 
-- [ ] Equipe formada, com número `NN` atribuído pelo docente
-- [ ] Organização criada no Azure DevOps, preferencialmente com o nome `engsoft-<turma>-equipe-NN`, na região *Brazil South*
+- [ ] Equipe formada, com nome escolhido pelos integrantes
+- [ ] Organização `<organizacao-azure-devops>` criada no Azure DevOps **com a conta institucional** de um integrante, na região *Brazil South*
+- [ ] Organização ligada ao **Microsoft Entra ID** da instituição: **Organization settings › Microsoft Entra** mostra o diretório institucional
 - [ ] Projeto criado obrigatoriamente com o nome `Connexa` e com o **processo Agile** (não *Basic*, não *Scrum*)
-- [ ] Todos os integrantes convidados com nível de acesso *Basic*
-- [ ] Docente adicionado ao projeto
+- [ ] Todos os integrantes convidados pelo e-mail institucional, com nível de acesso *Basic*. O plano gratuito inclui cinco usuários *Basic*; confira em **Organization settings › Users**, porque quem é adicionado direto ao projeto pode receber *Stakeholder*
+- [ ] Docente adicionado ao projeto; o acesso *Stakeholder*, gratuito, é suficiente
 - [ ] Documento de proposta do projeto lido integralmente, em equipe
 
 > Se o processo do projeto não for *Agile*, o nível **Feature** não existirá e a atividade não poderá ser concluída. Nesse caso, recrie o projeto antes de prosseguir.
+
+> Organização criada com conta pessoal não se liga ao Microsoft Entra ID e impede, na Atividade de Sprint, a conexão do agente de IA com o Azure Boards. Nesse caso, recrie a organização com a conta institucional antes de prosseguir.
 
 ---
 
@@ -81,7 +81,7 @@ Trabalhe em papel ou em um documento compartilhado. **Não abra o Azure Boards n
    - o que hoje a impede.
 2. Releia os objetivos declarados pela instituição e os territórios dentro do escopo.
 3. Liste candidatos a **Epic**: de dois a quatro resultados amplos, expressos como mudança percebida por alguém — não como módulo do sistema.
-4. Para cada Epic, liste candidatos a **Feature**: blocos de funcionalidade que fariam sentido anunciar a quem usa.
+4. Para cada Epic, liste candidatos a **Feature**: blocos de funcionalidade que fariam sentido anunciar a quem usa. As Features costumam corresponder aos territórios do escopo descritos no briefing.
 5. Para cada Feature, liste candidatos a **User Story**.
 
 **Teste obrigatório de nível.** Para cada item, complete a frase: *"ao final deste item, ___ consegue ___"*.
@@ -92,9 +92,9 @@ Trabalhe em papel ou em um documento compartilhado. **Não abra o Azure Boards n
 
 ---
 
-### Etapa 2 — Escrever as histórias (50 min)
+### Etapa 2 — Escrever as histórias (50 min em aula + trabalho extraclasse)
 
-Para cada história candidata, escreva:
+Comece pelas histórias que provavelmente ficarão no topo do backlog e termine as demais fora da aula. Para cada história candidata, escreva:
 
 **Título** — curto e acionável, sem o "Como…, quero…". Exemplo: *Declarar horários de disponibilidade*.
 
@@ -117,14 +117,14 @@ Cenário: <nome do cenário>
     E <efeito adicional observável>
 ```
 
-**Regras de escrita cobradas na correção:**
+**Regras de escrita:**
 
 - o papel é específico (`estudante ingressante`, `monitor`), nunca "o usuário";
 - nenhum critério menciona tabela, classe, endpoint ou tecnologia;
 - valores são concretos (`R$ 40,00`, `três integrantes`), nunca "um valor qualquer";
 - cada história passa no teste **INVEST** — em especial **S** (cabe em uma sprint) e **T** (é testável).
 
-> **Checkpoint 2** — troque as histórias com outra equipe e peça que ela aponte, em cinco minutos, qualquer critério de aceite sobre o qual duas pessoas possam discordar. Corrija os apontados.
+> **Checkpoint 2** — troque as histórias com outra equipe e peça que ela aponte, em cinco minutos, qualquer critério de aceite sobre o qual duas pessoas possam discordar. Corrija os apontados. Fora da aula, faça a troca dentro da própria equipe: cada história é revisada por quem não a escreveu.
 
 ---
 
@@ -136,11 +136,12 @@ Sempre **de cima para baixo**:
 2. Expanda cada Epic e use o sinal **+** à esquerda para criar as **Features** filhas — o vínculo nasce pronto.
 3. Expanda cada Feature e use o **+** para criar as **User Stories**.
 4. Abra cada história e preencha `Description` e `Acceptance Criteria`. Salve com *Save & Close*.
+   - O editor do campo pode perder a indentação do Gherkin. O essencial é manter uma linha por passo (`Dado`, `Quando`, `Então`, `E`) e uma linha em branco entre os cenários.
 5. Se alguma história ficou órfã, use **View options › Mapping** e arraste-a sobre a Feature correta.
 
 > Item criado pelo botão geral, sem passar pelo pai, nasce **sem vínculo** e desaparece da árvore quando o nível exibido muda.
 
-**Divisão do trabalho:** todos os integrantes precisam criar ou editar itens. O histórico de cada work item é consultado na correção.
+**Divisão do trabalho:** todos os integrantes precisam criar ou editar itens. O histórico de cada work item registra quem criou e quem editou.
 
 > **Checkpoint 3** — ao selecionar o nível *Features*, toda história aparece sob alguma Feature; não há itens no grupo *Unparented*.
 
@@ -148,16 +149,21 @@ Sempre **de cima para baixo**:
 
 ### Etapa 4 — Estimar, ordenar e classificar (40 min)
 
-1. **Escolher a história de referência.** Selecione uma história pequena e bem compreendida por todos e atribua a ela **3 Story Points**. Registre qual foi.
+1. **Escolher a história de referência.** Selecione uma história pequena e bem compreendida por todos e atribua a ela **3 Story Points**.
 2. **Estimar por comparação** (Planning Poker): leitura em voz alta → voto simultâneo em silêncio → revelação → discussão dos extremos → uma reestimativa → registro. Escala: `1, 2, 3, 5, 8, 13`.
    - História estimada em **13 ou mais** deve ser quebrada antes de seguir (por passo do fluxo, por perfil, por regra de negócio, por variação de dado ou por caminho feliz × exceções).
 3. **Ordenar por arrasto** na página de backlog, até que a sequência responda: *se a equipe só conseguir fazer três coisas, quais são?* Não existe empate.
+   - A primeira sprint usará um estudante simulado: histórias de identidade (cadastro, comprovação de e-mail, senha, recuperação de acesso) ficam fora dela. Ordene considerando o que pode ser entregue antes da autenticação real.
 4. **Classificar em MoSCoW** com Tags, usando exatamente estas grafias: `Must`, `Should`, `Could`, `Wont`.
    - Regra prática: os itens `Must` não devem ultrapassar 60% do esforço total do backlog (soma dos Story Points).
    - Aplique em lote: selecione várias histórias com `Ctrl`, botão direito → *Edit*.
 5. **Exibir as colunas de conferência** em *Column Options*: `Story Points`, `Tags`, `State`.
+6. **Registrar as decisões** em comentários (**Discussion**) dos próprios work items:
+   - na história de referência, que ela é a referência de 3 pontos e por que foi escolhida;
+   - em cada uma das cinco primeiras histórias, por que ela ocupa aquela posição, citando o trecho do briefing (fala de envolvido, objetivo declarado ou restrição);
+   - na história afetada, a decisão sobre cada ponto em aberto do briefing que a equipe precisou resolver.
 
-> **Checkpoint 4** — a tela do backlog mostra, sem rolagem lateral, título, pontos e tag de cada história.
+> **Checkpoint 4** — a tela do backlog mostra, sem rolagem lateral, título, pontos e tag de cada história, e as decisões estão comentadas nos itens.
 
 ---
 
@@ -167,10 +173,12 @@ Em **Boards › Queries**, crie e execute quatro consultas sobre `Work Item Type
 
 | Consulta | Filtro | Resultado exigido |
 |---|---|---|
-| 1 | `Story Points` está vazio | nenhuma linha |
-| 2 | `Acceptance Criteria` está vazio | nenhuma linha |
-| 3 | `Description` está vazio | nenhuma linha |
-| 4 | `Tags` está vazio | nenhuma linha |
+| 1 | `Story Points` `=` (valor em branco) | nenhuma linha |
+| 2 | `Acceptance Criteria` `Is Empty` | nenhuma linha |
+| 3 | `Description` `Is Empty` | nenhuma linha |
+| 4 | `Tags` `Does Not Contain` `Must` **e** `Tags` `Does Not Contain` `Should` **e** `Tags` `Does Not Contain` `Could` **e** `Tags` `Does Not Contain` `Wont` | nenhuma linha |
+
+> O Azure Boards não consulta diretamente itens sem nenhuma tag. A consulta 4 encontra as histórias que não têm nenhuma das quatro tags MoSCoW — o que também revela grafias erradas, como `Won't` ou `must`.
 
 Se qualquer consulta retornar linhas, a entrega está incompleta — corrija antes de submeter.
 
@@ -188,30 +196,31 @@ Se qualquer consulta retornar linhas, a entrega está incompleta — corrija ant
 - 100% das histórias com `Acceptance Criteria` em Gherkin, incluindo caminho de exceção
 - 100% das histórias com `Story Points` e Tag MoSCoW
 - Backlog **ordenado**, sem empates
-
+- Decisões comentadas nos work items: história de referência, posição das cinco primeiras histórias e pontos em aberto resolvidos
 
 ### 5.2 Submissão no Microsoft Teams
 
 Um único post da equipe, contendo:
 
 - link do projeto no Azure Boards (com o docente já adicionado);
-- cópia de tela mostrando o backlog criado
+- cópia de tela mostrando o backlog criado;
+- nome da equipe e nome completo de todos os integrantes.
 
 ---
-
-
 
 ## 6. Erros frequentes
 
 | Erro | Como se manifesta | Correção |
 |---|---|---|
+| Organização criada com conta pessoal | **Organization settings › Microsoft Entra** não mostra o diretório da instituição | Recriar a organização com a conta institucional; sem isso, o agente de IA não se conecta ao Azure Boards na Atividade de Sprint |
 | Criar tudo como User Story | Nada aparece nos níveis Epics e Features | Habilitar os níveis e reparentar pelo painel *Mapping* |
-| História horizontal | "Criar o banco de dados", "Montar a API" | Reescrever como fatia vertical; o trabalho técnico vira Task, criada depois, na etapa de planejamento da sprint |
+| História horizontal | "Criar o banco de dados", "Montar a API" | Reescrever como fatia vertical; o trabalho técnico vira Task, criada depois, na Atividade de Sprint |
 | Critério que testa implementação | "Então um registro é inserido na tabela" | Nomear o efeito visível para quem usa |
 | Só caminho feliz | Todos os cenários com dados válidos | Acrescentar recusa, limite e dado ausente |
 | Tudo `Must` | 100% das tags iguais | Reordenar e reclassificar aceitando que algo fica para depois |
+| Grafia diferente nas tags | `Won't`, `must`, `MUST` | Usar exatamente `Must`, `Should`, `Could`, `Wont`; a consulta 4 revela as diferenças |
 | Copiar o exemplo da aula | Backlog idêntico ao de outra equipe | O recorte precisa ser da equipe e defensável a partir do briefing |
-| Um integrante faz tudo | Histórico com um único autor | Distribuir a criação; a participação é avaliada |
+| Um integrante faz tudo | Histórico com um único autor | Distribuir a criação e a edição entre todos os integrantes |
 
 ---
 
